@@ -4,9 +4,10 @@ import java.util.Random;
 
 public class ColorSupplier {
     private static final Random RANDOM = new Random();
+    private static final int NUMBER = 5;
 
     public String getRandomColor() {
-        int num = RANDOM.nextInt(5);
+        int num = RANDOM.nextInt(NUMBER);
         return switch (num) {
             case 0 -> "yellow";
             case 1 -> "black";
