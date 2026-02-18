@@ -17,7 +17,8 @@ public class RightTriangle extends AbstractFigure {
 
     @Override
     public void draw() {
-        System.out.println("This figure is right triangle, its area is " + getArea());
+        System.out.println("Figure: right triangle, area: " + getArea() + "sq. units, first leg: " + firstLeg + " units, second leg: " + secondLeg + " units, color: " + color);
+
 
     }
 }

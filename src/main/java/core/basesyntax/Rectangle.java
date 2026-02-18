@@ -17,7 +17,7 @@ public class Rectangle extends AbstractFigure {
 
     @Override
     public void draw() {
-        System.out.println("This figure is triangle, its area is " + getArea());
+        System.out.println("Figure: right rectangle, area: " + getArea() + "sq. units, length: " + length + " units, width: " + width + " units, color: " + color);
 
     }
 }

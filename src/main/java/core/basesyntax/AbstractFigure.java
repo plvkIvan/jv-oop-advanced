@@ -1,7 +1,7 @@
 package core.basesyntax;
 
 public abstract class AbstractFigure implements Figure{
-    private String color;
+    protected String color;
 
     public AbstractFigure(String color) {
         this.color = color;
