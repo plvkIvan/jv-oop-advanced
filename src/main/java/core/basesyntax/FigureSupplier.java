@@ -4,11 +4,12 @@ import java.util.Random;
 
 public class FigureSupplier {
     private static final Random RANDOM = new Random();
+
     public Figure getRandomFigure() {
         int num = RANDOM.nextInt(5);
-        double side1 = RANDOM.nextInt((50) + 1);
-        double side2 = RANDOM.nextInt((50) + 1);
-        double side3 = RANDOM.nextInt((50) + 1);
+        double side1 = RANDOM.nextInt(50) + 1;
+        double side2 = RANDOM.nextInt(50) + 1;
+        double side3 = RANDOM.nextInt(50) + 1;
         ColorSupplier colorSupplier = new ColorSupplier();
         return switch (num) {
             case 0 -> new Circle(colorSupplier.getRandomColor(), side1);
@@ -19,7 +20,8 @@ public class FigureSupplier {
             default -> throw new IllegalStateException("Unexpected value: " + num);
         };
     }
-    public Figure getDefaultFigure(){
+
+    public Figure getDefaultFigure() {
         return new Circle("white", 10);
     }
 

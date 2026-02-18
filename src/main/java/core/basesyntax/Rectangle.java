@@ -12,12 +12,13 @@ public class Rectangle extends AbstractFigure {
 
     @Override
     public double getArea() {
-        return length*width;
+        return length * width;
     }
 
     @Override
     public void draw() {
-        System.out.println("Figure: right rectangle, area: " + getArea() + "sq. units, length: " + length + " units, width: " + width + " units, color: " + color);
+        System.out.println("Figure: right rectangle, area: " + getArea() + "sq. units, length: "
+                + length + " units, width: " + width + " units, color: " + color);
 
     }
 }

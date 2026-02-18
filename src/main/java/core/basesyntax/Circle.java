@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.awt.*;
-
 public class Circle extends AbstractFigure {
     private final double radius;
 
@@ -12,11 +10,12 @@ public class Circle extends AbstractFigure {
 
     @Override
     public double getArea() {
-        return Math.PI*radius*radius;
+        return Math.PI * radius * radius;
     }
 
     @Override
     public void draw() {
-        System.out.println("Figure: circle, area: " + getArea() + "sq. units, radius: " + radius + " units, color: " + color);
+        System.out.println("Figure: circle, area: " + getArea()
+                + "sq. units, radius: " + radius + " units, color: " + color);
     }
 }
