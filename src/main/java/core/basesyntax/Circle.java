@@ -1,11 +1,18 @@
 package core.basesyntax;
 
+import java.awt.*;
+
 public class Circle extends AbstractFigure {
-    private double radius;
+    private final double radius;
+
+    public Circle(String color, double radius) {
+        super(color);
+        this.radius = radius;
+    }
 
     @Override
     public double getArea() {
-        return 0;
+        return Math.PI*radius*radius;
     }
 
     @Override

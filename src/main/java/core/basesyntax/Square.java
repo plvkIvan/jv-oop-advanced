@@ -1,7 +1,12 @@
 package core.basesyntax;
 
 public class Square extends AbstractFigure{
-    private double base;
+    private final double base;
+
+    public Square(String color, double base) {
+        super(color);
+        this.base = base;
+    }
 
     @Override
     public double getArea() {
