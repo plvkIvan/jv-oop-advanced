@@ -6,7 +6,7 @@ public class FigureSupplier {
     private static final Random RANDOM = new Random();
     private static final int NUMBER = 5;
     private static final int MAX_SIDE = 50;
-    private static final String DEFAULT_COLOR = "white";
+    private static final String DEFAULT_COLOR = "WHITE";
     private static final int DEFAULT_RADIUS = 10;
 
     public Figure getRandomFigure() {
@@ -25,8 +25,7 @@ public class FigureSupplier {
         };
     }
 
-    public Figure getDefaultFigure() {
+    public AreaCalculator getDefaultFigure() {
         return new Circle(DEFAULT_COLOR, DEFAULT_RADIUS);
     }
-
 }
